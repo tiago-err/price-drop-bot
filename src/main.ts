@@ -12,7 +12,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const mongoUrl = process.env.MONGO_URL;
-const client = new MongoClient(mongoUrl);
+const client = new MongoClient(mongoUrl, {auth: {username: process.env.MONGO_USERNAME, password: process.env.MONGO_PASSWORD}});
 
 const intervalSeconds = 60 * 10;
 

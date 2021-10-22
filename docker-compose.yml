@@ -7,4 +7,6 @@ services:
       environment:
          - BOT_TOKEN=${BOT_TOKEN}
          - MONGO_DB=${MONGO_DB}
-         - MONGO_URL=${MONGO_URL}
+         - MONGO_URL=${MONGO_URL
+         - MONGO_USERNAME=${MONGO_USERNAME}
+         - MONGO_PASSWORD=${MONGO_PASSWORD}
