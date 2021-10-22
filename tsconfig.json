@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        "outDir": "./built",
+        "allowJs": true,
+        "esModuleInterop": true,
+        "target": "es6",
+        "baseUrl": "./src",
+        "moduleResolution": "node",
+        "paths": {
+            "@functions/*": [
+                "functions/*"
+            ],
+            "@queries/*": [
+                "queries/*"
+            ],
+            "@queries": [
+                "queries/index.ts"
+            ],
+            "@commands/*": [
+                "commands/*"
+            ],
+            "@commands": [
+                "commands"
+            ],
+            "@scrapers/*": [
+                "scrapers/*"
+            ],
+            "@scrapers": [
+                "scrapers"
+            ],
+            "@interfaces": [
+                "interfaces.ts"
+            ]
+        }
+    },
+    "include": [
+        "**/src/*"
+    ]
+}

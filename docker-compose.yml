@@ -1,0 +1,6 @@
+version: "3"
+services:
+   price_drop_bot:
+      container_name: price_drop_bot
+      build: ./
+      image: result/latest
