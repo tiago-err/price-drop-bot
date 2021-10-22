@@ -10,3 +10,4 @@ services:
          - MONGO_URL=${MONGO_URL}
          - MONGO_USERNAME=${MONGO_USERNAME}
          - MONGO_PASSWORD=${MONGO_PASSWORD}
+      restart: unless-stopped
